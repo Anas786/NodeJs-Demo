@@ -19,6 +19,19 @@ app.get('/order', (req, res) => {
     ])
 })
 
+app.get('/product', (req, res) => {
+    res.send([
+      {
+        productId: '1',
+        price: 100
+      },
+      {
+        productId: '2',
+        price: 150
+      }
+    ])
+})
+
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
 })
